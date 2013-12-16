@@ -1,0 +1,201 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, canvas{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+
+
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: #333;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Finger Paint', cursive;
+}
+
+h1{
+  font-size: 3.5em;
+  padding: 1.5em 0 1em 0;
+}
+
+p{
+  padding: 1em 0;
+}
+
+a{
+  color: #F80;
+}
+
+.author{
+  color: #AAA;
+  font-size: 0.9em;
+  padding-bottom: 3em;
+}
+
+.explanations{
+  clear: both;
+  font-size: 0.7em;
+  padding: 1em 0 3em 0;
+  color: #889;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  padding-top: 3em;
+}
+
+.game{
+  width: 46%;
+  float: left;
+  padding-bottom: 3em;
+}
+
+
+
+.game h2{
+  font-size: 1.6em;
+  margin: 1em auto 0 auto;
+  padding: 1em 0;
+  width: 8em;
+  text-align: center;
+}
+
+.game.won h2{
+  background: url(img/won.png) no-repeat;
+  background-position: 100% 15px;
+}
+
+.gameCanvas{
+  width:  1px;
+  height: 1px;
+  display: block;
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  padding: 99px 0 100px 0;
+  cursor: pointer;
+}
+
+
+
+.magnifier,
+.magnifier_broken{
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  cursor: pointer;
+  padding-left: 34px;
+  padding-top: 6px;
+  width: 10px;
+  height: 44px;
+  background: url(img/magnifier_wo.png) no-repeat;
+  font-size: 0.8em;
+  text-align: left;
+}
+
+.magnifier_broken{
+  background: url(img/magnifier_broken.png) no-repeat;
+}
+
+.magnifier span,
+.magnifier_broken span{
+  display: none;
+  color: #F80;
+}
+
+.magnifier:hover{
+  width: 115px;
+}
+
+.magnifier_broken:hover{
+  width: 130px;
+}
+
+.magnifier:hover span,
+.magnifier_broken:hover span{
+  display: inline;
+}
+
+
+.img_positionner{
+  position: relative;
+  width: 0;
+  margin: auto;
+}
+
+.img_positionner img{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gameA .img_positionner img{
+  top: 124px;
+  left: -122px;
+}
+
+.gameB .img_positionner img{
+  top: 122px;
+  left: -8px;
+}
+
+.gameB .magnifier{
+  left: -90px;
+  top: 250px;
+}
+
+.gameC .img_positionner img{
+  top: 194px;
+  left: -134px;
+}
+
+.gameC .magnifier{
+  left: 20px;
+  top: 100px;
+}
+
+.gameD .img_positionner img{
+  top: 185px;
+  left: -37px;
+}
+
+.gameD .magnifier{
+  left: 40px;
+  top: 140px;
+}
+
+
+.gameE{
+  padding-top: 2em;
+  float: none;
+  clear: both;
+  margin: auto;
+}
+
+.gameE .img_positionner img{
+  top: 85px;
+  left: -100px;
+}
+
+.gameE .magnifier_broken{
+  left: 40px;
+  top: 85px;
+}
+
+.gameE .gameCanvas{
+  position: relative;
+  left: -85px;
+  top: -30px;
+}
